@@ -26,7 +26,7 @@ import pdb
 import cv2
 import numpy as np
 
-def add_margin(pil_img, color=0, size=256):
+def add_margin(pil_img, color=0, size=512):
     width, height = pil_img.size
     result = Image.new(pil_img.mode, (size, size), color)
     result.paste(pil_img, ((size - width) // 2, (size - height) // 2))

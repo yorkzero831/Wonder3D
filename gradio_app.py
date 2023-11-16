@@ -180,7 +180,7 @@ def prepare_data(single_image, crop_size):
     dataset = SingleImageDataset(
         root_dir = '',
         num_views = 6,
-        img_wh=[256, 256],
+        img_wh=[512, 512],
         bg_color='white',
         crop_size=crop_size,
         single_image=single_image
