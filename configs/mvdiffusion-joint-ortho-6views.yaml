@@ -32,7 +32,7 @@ unet_from_pretrained_kwargs:
   camera_embedding_type: 'e_de_da_sincos'
   projection_class_embeddings_input_dim: 10  
   num_views: 6
-  sample_size: 32
+  sample_size: 64
   zero_init_conv_in: false
   zero_init_camera_projection: false  
 

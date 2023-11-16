@@ -147,7 +147,7 @@ def preprocess(predictor, input_image, chk_group=None, segment=True, rescale=Fal
         input_image = Image.fromarray((rgb * 255).astype(np.uint8))
     else:
         input_image = expand2square(input_image, (127, 127, 127, 0))
-    return input_image, input_image.resize((320, 320), Image.Resampling.LANCZOS)
+    return input_image, input_image.resize((512, 512), Image.Resampling.LANCZOS)
 
 
 def load_wonder3d_pipeline(cfg):
